@@ -3,3 +3,18 @@
   Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
+
+<div>
+  <table>
+    <tr>
+      <th ng-repeat="(key, data) in pincodeData.fields">
+        {{key}}
+      </th>
+    </tr>
+    <tr ng-repeat="record in pincodeData.records">
+      <td ng-repeat="(key, data) in record">
+        {{data}}
+      </td>
+    </tr>
+  </table>
+</div>
