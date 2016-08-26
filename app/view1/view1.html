@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
 <p>This is the partial for view 1.</p>
+<div ng-app="myApp.view1" ng-controller="View1Ctrl">
+<table>
+<tr>
+	<th>ID</th>
+	<th>Timestamp</th>
+	<th>Train No</th>
+	<th>Train Name</th>
+	<th>ISL No</th>
+	<th>Station Code</th>
+	<th>Station Name</th>
+	<th>Arrival Time</th>
+	<th>Departure Time</th>
+	<th>Distance</th>
+	<th>Source Station Code</th>
+	<th>Source Station Name</th>
+	<th>Destination Station Code</th>
+	<th>Destination Station Name</th>
+</tr>
+<tr ng-repeat="rail in details">
+	<td>{{rail.fieldID}}</td>
+	<td>{{rail.fieldTimestamp}}</td>
+	<td>{{rail.fieldTrainNo}}</td>
+	<td>{{rail.fieldTrainName}}</td>
+	<td>{{rail.fieldIslNo}}</td>
+	<td>{{rail.fieldStationCode}}</td>
+	<td>{{rail.fieldStationName}}</td>
+	<td>{{rail.fieldArriavalTime}}</td>
+	<td>{{rail.fieldDepartureTime}}</td>
+	<td>{{rail.fieldDistance}}</td>
+	<td>{{rail.fieldSourceStationCode}}</td>
+	<td>{{rail.fieldSourceStationName}}</td>
+	<td>{{rail.fieldDestinationStationCode}}</td>
+	<td>{{rail.fieldDestinationStationName}}</td>
+</tr>
+</table?
+</div>
+</body>
+</html>
