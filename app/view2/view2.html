@@ -1,10 +1,9 @@
-<p>This is the partial for view 2.</p>
 <p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
+  <strong>Pincode</strong>
 </p>
 
-<div>
+<section>
+  <!--
   <table>
     <tr>
       <th ng-repeat="(key, data) in pincodeData.fields">
@@ -17,4 +16,12 @@
       </td>
     </tr>
   </table>
-</div>
+-->
+
+<ul class="w3-ul w3-card-4">
+  <li ng-repeat="record in pincodeData.records">
+    {{record.StateName}}
+  </li>
+</ul>
+
+</section>

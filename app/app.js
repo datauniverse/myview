@@ -11,4 +11,18 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+}]).
+controller('appController', function() {
+  var vm = this;
+
+  vm.visibleClass = '';
+
+  vm.openNav = function () {
+    console.log('Clicked!');
+    if (vm.visibleClass === '') {
+      vm.visibleClass = 'w3-show';
+    } else {
+      vm.visibleClass = '';
+    }
+  };
+});
