@@ -12,7 +12,7 @@ angular.module('myApp.view1', ['ngRoute'])
 .controller('View1Ctrl', ['$scope','$http',function($scope,$http) {
 $http.get("https://data.gov.in/api/datastore/resource.json?resource_id=b46200c1-ca9a-4bbe-92f8-b5039cc25a12&api-key=574cfe75dbb216592ad3419d97bfa16c")
 .then(function(response){
-	
+
 	var railInfo=response.data.records;
     $scope.details=railInfo.map(function(item,index){
 		return {
@@ -32,6 +32,6 @@ $http.get("https://data.gov.in/api/datastore/resource.json?resource_id=b46200c1-
 			fieldDestinationStationName: item['Destination Station Name']
 		};
 	});
-	
+
 	});
 }]);
