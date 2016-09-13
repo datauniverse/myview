@@ -22,7 +22,8 @@ constant('constant', {
 
   // Out Application specific key that is recognized by data.gov.in
   'apiKey': 'api-key=574cfe75dbb216592ad3419d97bfa16c',
-
   // The Resource ID that fetches the Postal Code details from the API
-  'pincodeResourceId': 'resource_id=7eca2fa3-d6f5-444e-b3d6-faa441e35294'
+  'pincodeResourceId': 'resource_id=7eca2fa3-d6f5-444e-b3d6-faa441e35294',
+  
+  'trainInfoResourceId': 'resource_id=b46200c1-ca9a-4bbe-92f8-b5039cc25a12'
 });
